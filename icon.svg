@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a77f"/><stop offset="1" stop-color="#a9835a"/></linearGradient>
+    <clipPath id="clapTop"><rect x="560" y="420" width="290" height="70" rx="10"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="#f4ede3"/>
+  <!-- 은은한 빛 -->
+  <circle cx="512" cy="430" r="360" fill="#fffaf2" opacity=".75"/>
+
+  <!-- 책 1 (갈색) -->
+  <rect x="190" y="290" width="150" height="470" rx="10" fill="#b5793a"/>
+  <rect x="190" y="350" width="150" height="16" fill="#e7c79a" opacity=".9"/>
+  <rect x="190" y="680" width="150" height="16" fill="#e7c79a" opacity=".9"/>
+  <rect x="226" y="420" width="78" height="190" rx="8" fill="#9a6430"/>
+  <!-- 책 2 (잉크, 살짝 기울어짐) -->
+  <g transform="rotate(-8 430 760)">
+    <rect x="352" y="350" width="128" height="410" rx="10" fill="#3b2f25"/>
+    <rect x="352" y="400" width="128" height="12" fill="#b5793a"/>
+    <rect x="352" y="700" width="128" height="12" fill="#b5793a"/>
+  </g>
+
+  <!-- 클래퍼보드 -->
+  <g>
+    <rect x="560" y="500" width="290" height="260" rx="18" fill="#3b2f25"/>
+    <rect x="590" y="560" width="230" height="12" rx="6" fill="#f4ede3" opacity=".35"/>
+    <rect x="590" y="600" width="160" height="12" rx="6" fill="#f4ede3" opacity=".35"/>
+    <path d="M675 640 L675 720 L745 680 Z" fill="#f4ede3"/>
+    <g transform="rotate(-16 560 490)">
+      <rect x="560" y="420" width="290" height="70" rx="10" fill="#3b2f25"/>
+      <g clip-path="url(#clapTop)" fill="#f4ede3">
+        <path d="M600 420 L650 420 L610 490 L560 490 Z"/>
+        <path d="M700 420 L750 420 L710 490 L660 490 Z"/>
+        <path d="M800 420 L850 420 L810 490 L760 490 Z"/>
+      </g>
+    </g>
+    <circle cx="572" cy="497" r="14" fill="#b5793a"/>
+  </g>
+
+  <!-- 나무 선반 -->
+  <rect x="130" y="760" width="764" height="54" rx="8" fill="url(#wood)"/>
+  <rect x="150" y="814" width="724" height="18" rx="6" fill="#8a6440" opacity=".35"/>
+</svg>
