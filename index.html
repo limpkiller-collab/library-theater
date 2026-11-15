@@ -99,7 +99,7 @@ const TARGET = 'https://script.google.com/macros/s/AKfycbx0Bz9qXllX2G7P66oHbWNVH
 //                             단, iOS 홈 화면 앱에서는 Safari로 튈 수 있음(외부 도메인 이동이라).
 //    'embed'                : 이 페이지 안 iframe으로 띄워 홈 화면 앱 느낌 유지.
 //                             구글 인증 쿠키가 차단될 수 있습니다. 안 되면 'redirect'로 되돌리세요.
-const MODE = 'redirect';
+const MODE = 'embed';
 
 // ══════════════════════════════════════════════════════════════
 
@@ -154,7 +154,7 @@ const MODE = 'redirect';
   if (MODE === 'embed') {
     var f = document.createElement('iframe');
     f.src = TARGET;
-    f.setAttribute('allow', 'clipboard-write');
+    f.setAttribute('allow', 'clipboard-read; clipboard-write');
     var ok = false;
     f.onload = function () { ok = true; };
     document.body.appendChild(f);
